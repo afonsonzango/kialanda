@@ -192,6 +192,9 @@ header.header nav.navbar .nav-copper .act .mobile-button svg {
   width: 34px;
   height: 34px;
 }
+header.header nav.navbar .nav-copper .act .mobile-button svg path {
+  fill: var(--textColor);
+}
 
 #content {
   padding: 0 30px;
