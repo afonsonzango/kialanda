@@ -1,0 +1,197 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 60px;
+  background-color: var(--background);
+  color: var(--textColor);
+}
+body, body * {
+  font-family: var(--fml-primary);
+}
+
+:root {
+  --fml-primary: Relaway;
+  --fml-secondary: Oswald;
+}
+
+[data-theme=light] {
+  --textColor: rgb(0, 0, 0, .9);
+  --background: rgb(255, 255, 255);
+  --lightBackgroundColor: rgb(0,0,0,.1);
+  --theme: #28a745;
+}
+
+[data-theme=dark] {
+  --textColor: rgba(255, 255, 255, 0.9);
+  --background: rgb(14, 14, 14);
+  --lightBackgroundColor: rgba(255, 255, 255, 0.1);
+  --theme: #28a745;
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(../../fonts/Oswald-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Relaway;
+  src: url(../../fonts/Raleway-VariableFont_wght.ttf);
+}
+#progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  background-color: var(--theme);
+  height: 3px;
+  z-index: 1;
+  opacity: 1;
+  transition: 4s;
+  transition-property: width;
+}
+
+header.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+header.header nav.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: var(--background);
+  padding: 0 30px;
+}
+@media (max-width: 1027px) {
+  header.header nav.navbar {
+    padding: 0 20px;
+  }
+}
+header.header nav.navbar .nav-copper {
+  width: 100%;
+  display: flex;
+}
+header.header nav.navbar .nav-copper .logo {
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  display: flex;
+}
+header.header nav.navbar .nav-copper .logo .fk {
+  width: 38px;
+  height: 38px;
+  border-radius: 100%;
+  background-color: var(--lightBackgroundColor);
+}
+header.header nav.navbar .nav-copper .nav-able {
+  width: 100%;
+}
+header.header nav.navbar .nav-copper .nav-able ul {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+  align-items: center;
+  transition: 0.1s;
+}
+@media (max-width: 1027px) {
+  header.header nav.navbar .nav-copper .nav-able ul {
+    gap: 25px;
+  }
+}
+@media (max-width: 991px) {
+  header.header nav.navbar .nav-copper .nav-able ul {
+    position: fixed;
+    background-color: var(--background);
+    width: 100%;
+    left: 0;
+    display: block;
+    height: calc(100% - 60px);
+    top: 60px;
+    padding: 10px 20px;
+  }
+  header.header nav.navbar .nav-copper .nav-able ul li {
+    margin-bottom: 16px;
+  }
+  header.header nav.navbar .nav-copper .nav-able ul li a {
+    padding: 6px 0px;
+    border-radius: 4px;
+  }
+}
+header.header nav.navbar .nav-copper .nav-able ul li a {
+  text-decoration: none;
+  color: var(--textColor);
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s;
+}
+header.header nav.navbar .nav-copper .nav-able ul li a:focus {
+  -webkit-text-decoration: underline dashed 1.2px;
+          text-decoration: underline dashed 1.2px;
+}
+header.header nav.navbar .nav-copper .act {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header.header nav.navbar .nav-copper .act .theme-act {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: 0.4s;
+  background-color: var(--lightBackgroundColor);
+}
+header.header nav.navbar .nav-copper .act .theme-act:active {
+  transition: 0.06s;
+  transform: scale(0.9);
+}
+header.header nav.navbar .nav-copper .act .theme-act svg {
+  width: 22px;
+  height: 22px;
+}
+header.header nav.navbar .nav-copper .act .theme-act svg path {
+  fill: var(--textColor);
+}
+header.header nav.navbar .nav-copper .act .mobile-button {
+  width: 34px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background-color: transparent;
+  transition: 0.5s;
+  display: none;
+}
+@media (max-width: 991px) {
+  header.header nav.navbar .nav-copper .act .mobile-button {
+    display: block;
+  }
+}
+header.header nav.navbar .nav-copper .act .mobile-button:active {
+  transition: 0.06s;
+  transform: scale(0.9);
+}
+header.header nav.navbar .nav-copper .act .mobile-button svg {
+  width: 34px;
+  height: 34px;
+}
+
+#content {
+  padding: 0 30px;
+}/*# sourceMappingURL=main.css.map */
