@@ -71,6 +71,11 @@ header.header nav.navbar {
     padding: 0 20px;
   }
 }
+@media (max-width: 991px) {
+  header.header nav.navbar {
+    padding: 0 10px;
+  }
+}
 header.header nav.navbar .nav-copper {
   width: 100%;
   display: flex;
@@ -198,4 +203,14 @@ header.header nav.navbar .nav-copper .act .mobile-button svg path {
 
 #content {
   padding: 0 30px;
+}
+@media (max-width: 1027px) {
+  #content {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 991px) {
+  #content {
+    padding: 0 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

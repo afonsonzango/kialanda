@@ -73,6 +73,10 @@ header.header{
             padding: 0 20px;
         }
 
+        @media (max-width: 991px){
+            padding: 0 10px;
+        }
+
         .nav-copper{
             width: 100%;
             display: flex;
@@ -215,4 +219,12 @@ header.header{
 
 #content{
     padding: 0 30px;
+
+    @media (max-width: 1027px){
+        padding: 0 20px;
+    }
+
+    @media (max-width: 991px){
+        padding: 0 10px;
+    }
 }
