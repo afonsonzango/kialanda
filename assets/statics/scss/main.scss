@@ -23,14 +23,14 @@ body {
     --textColor: rgb(0, 0, 0, .9);
     --background: rgb(255, 255, 255);
     --lightBackgroundColor: rgb(0,0,0,.1);
-    --theme: #28a745;
+    --theme: #007BFF;
 }
 
 [data-theme="dark"]{
     --textColor: rgba(255, 255, 255, 0.9);
     --background: rgb(14, 14, 14);
     --lightBackgroundColor: rgba(255, 255, 255, 0.1);
-    --theme: #28a745;
+    --theme: #007BFF;
 }
 
 @font-face {
