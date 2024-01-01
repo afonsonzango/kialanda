@@ -42,9 +42,6 @@ function removeProgress() {
 }
 
 window.addEventListener('load', function () {
-    // Initial data load for the Home page
-    loadPage('/pages/introducao');
-
     // Event listener for navigation links
     document.addEventListener('click', function (event) {
         if (event.target.tagName === 'A') {
