@@ -41,7 +41,7 @@ function removeProgress() {
     }, 100);
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
     // Initial data load for the Home page
     loadPage('/pages/introducao');
 
