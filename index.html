@@ -10,7 +10,7 @@
 
     <script src="./router/script.js" defer></script>
 </head>
-<body onload="loadPage('/pages/introducao')">    
+<body>    
     <header class="header">
         <nav class="navbar">
             <div class="nav-copper">
@@ -19,10 +19,9 @@
                 </div>
                 <div class="nav-able">
                     <ul id="lnk-container">
-                        <li><a href="/pages/introducao">Introdução</a></li>
+                        <li><a href="/pages/introducao" id="starting-page">Introdução</a></li>
                         <li><a href="/pages/auto_apresentacao">Auto Apresentação</a></li>
                         <li><a href="/pages/projectos">Projectos</a></li>
-                        <li><a href="/pages/servicos">Serviços</a></li>
                         <li><a href="/pages/depoimentos">Depoimentos</a></li>
                         <li><a href="/pages/blog">Blog</a></li>
                         <li><a href="/pages/curriculum">Currículum</a></li>
@@ -47,6 +46,13 @@
 
     <div id="content"></div>
 
+    <script>
+        window.addEventListener('load', function(){
+            setTimeout(() => {
+                document.getElementById('starting-page').click();
+            }, 100);
+        });
+    </script>
     <script src="./assets/statics/scripts/main.js"></script>
     <script src="./assets/statics/dependences/bootstrap-5.3.2-dist/bootstrap.bundle.min.js"></script>
 </body>
