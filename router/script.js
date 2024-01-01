@@ -15,7 +15,7 @@ function loadPage(page) {
         });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('load', function () {
     setTimeout(() => {
         // Initial data load for the Home page
         loadPage('/pages/introducao');
