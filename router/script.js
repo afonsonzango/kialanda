@@ -15,9 +15,11 @@ function loadPage(page) {
         });
 }
 
-document.addEventListener('addEventListener("DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(() => {
         // Initial data load for the Home page
         loadPage('/pages/introducao');
+    }, 1000);
 
     // Event listener for navigation links
     document.addEventListener('click', function (event) {
