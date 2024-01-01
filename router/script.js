@@ -15,22 +15,6 @@ function loadPage(page) {
         });
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    setTimeout(() => {
-        // Initial data load for the Home page
-        loadPage('/pages/introducao');
-    }, 1000);
-
-    // Event listener for navigation links
-    document.addEventListener('click', function (event) {
-        if (event.target.tagName === 'A') {
-            event.preventDefault();
-            const page = event.target.getAttribute('href').substring(1);
-            loadPage(page);
-        }
-    });
-});
-
 function addProgress() {
     if (!document.querySelector('#progress')) {
         const progressDiv = document.createElement('div');
@@ -56,3 +40,17 @@ function removeProgress() {
         }
     }, 100);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Initial data load for the Home page
+    loadPage('/pages/introducao');
+
+    // Event listener for navigation links
+    document.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A') {
+            event.preventDefault();
+            const page = event.target.getAttribute('href').substring(1);
+            loadPage(page);
+        }
+    });
+});
