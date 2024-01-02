@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="./assets/statics/dependences/bootstrap-5.3.2-dist/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/statics/scss/main.css">
-
+    
     <script src="./router/script.js" defer></script>
 </head>
 <body>    
@@ -19,13 +19,13 @@
                 </div>
                 <div class="nav-able">
                     <ul id="lnk-container">
-                        <li><a href="/pages/introducao" id="starting-page">Introdução</a></li>
+                        <li><a href="/pages/introducao" data-css="assets/statics/scss/pages/introducao.css" id="starting-page">Introdução</a></li>
                         <li><a href="/pages/projetos">Projetos</a></li>
                         <li><a href="/pages/tecnologias">Tecnologias</a></li>
                         <li><a href="/pages/depoimentos">Depoimentos</a></li>
                         <li><a href="/pages/contacto">Contacto</a></li>
                         <li><a href="/pages/blog">Blog</a></li>
-                        <li><a href="/pages/curriculum">Meu currículo</a></li>
+                        <li><a href="/pages/curriculum">Currículum</a></li>
                     </ul>
                 </div>
                 <div class="act">
@@ -44,8 +44,7 @@
         </nav>
     </header>
 
-    <div id="content"></div>
-
+    
     <script>
         window.addEventListener('load', function(){
             setTimeout(() => {
@@ -53,6 +52,9 @@
             }, 100);
         });
     </script>
+
+    <div id="content"></div>
+
     <script src="./assets/statics/scripts/main.js"></script>
     <script src="./assets/statics/dependences/bootstrap-5.3.2-dist/bootstrap.bundle.min.js"></script>
 </body>
