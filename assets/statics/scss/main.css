@@ -20,13 +20,19 @@ body, body * {
 
 [data-theme=light] {
   --textColor: rgb(0, 0, 0, .9);
+  --textColorDeep: rgb(0,0,0);
+  --textColorLighter: rgb(0, 0, 0, .8);
+  --shadowLight: rgb(0,0,0,.5);
   --background: rgb(255, 255, 255);
   --lightBackgroundColor: rgb(0,0,0,.1);
   --theme: #007BFF;
 }
 
 [data-theme=dark] {
-  --textColor: rgba(255, 255, 255, 0.9);
+  --shadowLight: rgba(255, 255, 255, .3);
+  --textColor: rgba(255, 255, 255, .9);
+  --textColorDeep: rgba(255, 255, 255);
+  --textColorLighter: rgba(255, 255, 255, .8);
   --background: rgb(14, 14, 14);
   --lightBackgroundColor: rgba(255, 255, 255, 0.1);
   --theme: #007BFF;
@@ -46,7 +52,7 @@ body, body * {
   left: 0;
   width: 0%;
   background-color: var(--theme);
-  height: 3px;
+  height: 4px;
   z-index: 1;
   opacity: 1;
   transition: 4s;
