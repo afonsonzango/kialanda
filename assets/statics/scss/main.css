@@ -219,4 +219,12 @@ header.header nav.navbar .nav-copper .act .mobile-button svg path {
   #content {
     padding: 0 10px;
   }
+}
+
+.btn-animate {
+  transition: 0.6s;
+}
+.btn-animate:active {
+  transition: 0.06s;
+  transform: scale(0.97);
 }/*# sourceMappingURL=main.css.map */

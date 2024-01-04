@@ -234,3 +234,12 @@ header.header{
         padding: 0 10px;
     }
 }
+
+.btn-animate{
+    transition: .6s;
+
+    &:active {
+        transition: .06s;
+        transform: scale(.97);
+    }
+}

@@ -29,6 +29,8 @@ function loadPage(page, css) {
     fetch(`${page}.html`)
     .then(response => response.text())
     .then(data => {
+        console.log(data);
+        
         contentDiv.innerHTML = data;
         loadCSS(css);
         removeProgress();
