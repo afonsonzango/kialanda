@@ -152,4 +152,75 @@ section.main-section {
             color: var(--background);
         }
     }
+
+    .blury-shadow {
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        left: 20px;
+        background-color: var(--theme-shadow);
+        filter: blur(150px);
+
+        @media (max-width: 520px) {
+            width: 100px;
+            height: 100px;
+            filter: blur(100px);
+        }
+    }
+}
+
+section.cards{
+    margin-top: 60px;
+
+    .row{
+        .col-sm-6{
+            width: calc(100% / 4);
+            
+            @media (max-width: 991px) {
+                width: calc(100% / 2);
+            }
+
+            @media (max-width: 450px) {
+                width: 100%;
+            }
+
+            .card {
+                border: none;
+                background-color: transparent;
+
+                .card-body{
+                    display: flex;
+                    gap: 20px;
+
+                    .icon-p {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                        background-image: linear-gradient(120deg, var(--shadowLight), transparent);
+                    }
+
+                    .desc-p {
+                        width: calc(100% - 50px);
+
+                        .title {
+                            margin-bottom: 10px;
+                            color: var(--textColorDeep);
+                            font-size: 16px;
+                            font-weight: 400;
+                            font-family: var(--fml-secondary);
+                        }
+
+                        .desc{
+                            font-size: 15px;
+                            color: var(--textColorLighter);
+                            font-size: 13px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

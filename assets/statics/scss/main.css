@@ -26,6 +26,7 @@ body, body * {
   --background: rgb(255, 255, 255);
   --lightBackgroundColor: rgb(0,0,0,.1);
   --theme: #007BFF;
+  --theme-shadow: #082545;
 }
 
 [data-theme=dark] {
@@ -36,6 +37,7 @@ body, body * {
   --background: rgb(14, 14, 14);
   --lightBackgroundColor: rgba(255, 255, 255, 0.1);
   --theme: #007BFF;
+  --theme-shadow: #7ebcff;
 }
 
 @font-face {
@@ -64,13 +66,15 @@ header.header {
   width: 100%;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 header.header nav.navbar {
   width: 100%;
   height: 60px;
   background-color: var(--background);
   padding: 0 30px;
+  transition: 0.4s;
+  transition-property: background-color;
 }
 @media (max-width: 1027px) {
   header.header nav.navbar {
