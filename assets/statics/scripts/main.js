@@ -49,7 +49,7 @@ const navbar = document.querySelector('nav.navbar');
 navbar.style.backgroundColor = 'transparent';
 
 document.addEventListener('scroll', function(){
-    if(scrollY > 70){
+    if(scrollY > 60){
         navbar.style.backgroundColor = '';
     }else{
         navbar.style.backgroundColor = 'transparent';

@@ -26,7 +26,8 @@ body, body * {
   --background: rgb(255, 255, 255);
   --lightBackgroundColor: rgb(0,0,0,.1);
   --theme: #007BFF;
-  --theme-shadow: #082545;
+  --theme-shadow: #0066d3;
+  --shadowLighter: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme=dark] {
@@ -38,6 +39,7 @@ body, body * {
   --lightBackgroundColor: rgba(255, 255, 255, 0.1);
   --theme: #007BFF;
   --theme-shadow: #7ebcff;
+  --shadowLighter: rgba(255, 255, 255, .03);
 }
 
 @font-face {
