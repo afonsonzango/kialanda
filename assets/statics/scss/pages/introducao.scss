@@ -434,10 +434,40 @@ section.personal-items {
             }
         }
 
-        .desc {
-            font-size: 15px;
-            color: var(--textColorLighter);
-            font-weight: 500;
+        .row {
+            .col-sm-6 {
+                width: calc(100% / 2);
+
+                .title-f{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    
+                    .icon {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 100%;
+                        background-image: linear-gradient(120deg, transparent, var(--shadowLight));
+                    }
+
+                    .text {
+                        font-size: 16px;
+                        font-family: var(--fml-secondary);
+                    }
+                }
+
+                .desc__{
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: var(--textColorLighter);
+                }
+
+                @media (max-width: 991px) {
+                    width: 100%;
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+            }
         }
 
         .actions {
@@ -452,4 +482,8 @@ section.personal-items {
             }
         }
     }
+}
+
+section.design-enviroment {
+    padding: 40px 0;
 }
