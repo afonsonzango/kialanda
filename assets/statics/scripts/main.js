@@ -55,3 +55,8 @@ document.addEventListener('scroll', function(){
         navbar.style.backgroundColor = 'transparent';
     }
 });
+
+
+const startGame = function (game){
+    window.location.pathname = `/games/${game}`
+}

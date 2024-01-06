@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,23 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" type="module"></script>
   <title>Document</title>
+  <style>
+    .outgame-class {
+      position: absolute;
+      bottom: 20px;
+      left: 0px;
+      right: 0px;
+      width: max-content;
+      margin: auto;
+      padding: 10px 30px;
+      background-image: linear-gradient(120deg, rgb(193, 193, 193), rgb(255, 255, 255));
+      color: #000;
+      text-decoration: none;
+      border-radius: 40px;
+    }
+  </style>
 </head>
+
 <body>
   <div class="score">
     <div id="player-score">0</div>
@@ -16,5 +33,8 @@
   <div class="ball" id="ball"></div>
   <div class="paddle left" id="player-paddle"></div>
   <div class="paddle right" id="computer-paddle"></div>
+
+  <a href="/" class="outgame-class">Sair do jogo</a>
 </body>
+
 </html>

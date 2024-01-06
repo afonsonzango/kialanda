@@ -12,14 +12,14 @@ function loadCSS(filePath) {
 
     // Set the content of the style element to the contents of the CSS file
     fetch(filePath)
-    .then(response => response.text())
-    .then(cssContent => {
-        styleElement.textContent = cssContent;
-    })
-    .catch(error => console.error("Error loading CSS file:", error));
+        .then(response => response.text())
+        .then(cssContent => {
+            styleElement.textContent = cssContent;
 
-    // Append the style element to the head of the document
-    document.head.appendChild(styleElement);
+            // Append the style element to the head of the document
+            document.head.appendChild(styleElement);
+        })
+        .catch(error => console.error("Error loading CSS file:", error));
 }
 
 function loadPage(page, css) {
@@ -27,17 +27,17 @@ function loadPage(page, css) {
     const contentDiv = document.getElementById('content');
 
     fetch(`${page}.html`)
-    .then(response => response.text())
-    .then(data => {
-        contentDiv.innerHTML = data;
-        loadCSS(css);
-        removeProgress();
-    })
-    .catch(error => {
-        console.error(`Error loading ${page}.html:`, error);
-        contentDiv.innerHTML = `<p>Error loading ${page}.html: ${error.message}</p>`;
-        removeProgress();
-    });
+        .then(response => response.text())
+        .then(data => {
+            contentDiv.innerHTML = data;
+            loadCSS(css);
+            removeProgress();
+        })
+        .catch(error => {
+            console.error(`Error loading ${page}.html:`, error);
+            contentDiv.innerHTML = `<p>Error loading ${page}.html: ${error.message}</p>`;
+            removeProgress();
+        });
 }
 
 function addProgress() {

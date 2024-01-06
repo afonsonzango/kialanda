@@ -1,6 +1,42 @@
 section.main-section {
   padding: 60px 0;
 }
+section.main-section .modal {
+  background-color: var(--shadowLight);
+}
+section.main-section .modal .modal-dialog .modal-content {
+  border-radius: 0;
+  border: none;
+  background-color: var(--background);
+  border-radius: 10px;
+  padding: 10px;
+}
+section.main-section .modal .modal-dialog .modal-content .modal-body .title {
+  font-size: 24px;
+  font-family: var(--fml-secondary);
+}
+section.main-section .modal .modal-dialog .modal-content .modal-body .b-nt {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section.main-section .modal .modal-dialog .modal-content .modal-body .games-list .game-play {
+  padding: 8px 20px;
+  background-image: linear-gradient(120deg, transparent, var(--shadowLighter));
+  border: 1px solid var(--shadowLighter);
+  background-color: transparent;
+  font-size: 15px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 30px;
+  color: var(--textColorDeep);
+  font-weight: 600;
+}
+section.main-section .modal .modal-dialog .modal-content .modal-body .games-list .game-play:hover {
+  background-image: linear-gradient(120deg, transparent, var(--shadowLight));
+}
 section.main-section .center-intro {
   font-size: 15px;
   font-weight: 500;
@@ -152,6 +188,23 @@ section.main-section .controls button {
   font-size: 15px;
   font-weight: 600;
   color: var(--background);
+}
+section.main-section .controls button.btn-animate-game {
+  background-color: var(--theme);
+  color: #fff;
+}
+@media (max-width: 991px) {
+  section.main-section .controls {
+    display: block;
+  }
+  section.main-section .controls button {
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 section.main-section .blury-shadow {
   width: 230px;
