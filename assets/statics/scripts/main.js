@@ -58,5 +58,5 @@ document.addEventListener('scroll', function(){
 
 
 const startGame = function (game){
-    window.location.pathname = `/games/${game}`
+    window.location.pathname = `/kialanda/games/${game}`
 }
